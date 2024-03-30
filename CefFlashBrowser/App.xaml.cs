@@ -54,7 +54,7 @@ namespace CefFlashBrowser
                 GlobalData.IsStartWithoutMainWindow = true;
                 foreach (var arg in e.Args)
                 {
-                    if (UrlHelper.IsLocalSwfFile(arg))
+                    if (UrlChecker.IsLocalSwfFile(arg))
                     {
                         WindowManager.ShowSwfPlayer(arg);
                     }
